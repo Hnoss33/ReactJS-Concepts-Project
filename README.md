@@ -72,14 +72,21 @@ Las expresiones pueden ser llamadas a otras funciones, cálculos matemáticos, e
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #¿Qué es un componente?
-Los componentes en React son bloques de construcción. Las aplicaciones hechas con React son como figuras de Lego. Junta varias piezas (componentes) y puedes construir un website tan pequeño o tan grande como quieras. Los componentes serán barras de búsquedas, enlaces, encabezados, el header, etc.
+Los componentes en React son bloques de construcción.
+Las aplicaciones hechas con React son como figuras de Lego. 
+Junta varias piezas (componentes) y puedes construir un website tan pequeño o tan grande como quieras.
+Los componentes serán barras de búsquedas, enlaces, encabezados, el header, etc.
 ”Componente” vs “elemento Un elemento es a un objeto como un componente es a una clase. Si el elemento fuera una casa, el componente serían los planos para hacer esa casa.
+
 Identificación de componentes Para identificarlos debes hacerte las siguientes preguntas:
+
 ¿Qué elementos se repiten? Estos son los elementos en una lista o los que comparten aspecto visual y su funcionalidad
 ¿Qué elementos cumplen una función muy específica? Estos sirven para encapsular la lógica y permiten juntar muchos comportamientos y aspectos visuales en un solo lugar.
+
 Identificar componentes es una habilidad esencial para poder desarrollar aplicaciones de React.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 #Cómo aplicar estilos
 Para los estilos crearemos una carpeta llamada Styles y allí vivirán todos los archivos de estilos que tienen que ver con los componentes.
 Para usar los estilos es necesario importarlos con import
@@ -91,6 +98,7 @@ Existen estilos que son usados de manera global o en varios componentes, así qu
 
 #Props
 Los props que es la forma corta de properties son argumentos de una función y en este caso serán los atributos de nuestro componente como class, src, etc.
+
 Estos props salen de una variable de la clase que se llama this.props y los valores son asignados directamente en el ReactDOM.render().
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -114,10 +122,18 @@ Algo interesante que le da el nombre a React es su parte de “reactivo” ya qu
 
 #Introducción a React Router
 Las aplicaciones que se trabajan en React son llamadas single page apps. Esto es posible gracias a React Router que es una librería Open Source.
+
 Multi Page Apps: Cada página implica una petición al servidor. La respuesta usualmente tiene todo el contenido de la página.
+
 Single Page Apps (SPA): Aplicaciones que cargan una sola página de HTML y cualquier actualización la hacen re-escribiendo el HTML que ya tenían.
-React Router (v4): Nos da las herramientas para poder hacer SPA fácilmente. Usaremos 4 componentes:
+
+React Router (v4): Nos da las herramientas para poder hacer SPA fácilmente. 
+
+Usaremos 4 componentes:
 BrowserRouter: es un componente que debe estar siempre lo más arriba de la aplicación. Todo lo que esté adentro funcionará como una SPA.
+
 Route: Cuando hay un match con el path, se hace render del component. El component va a recibir tres props: match, history, location.
+
 Switch: Dentro de Switch solamente van elementos de Route. Switch se asegura que solamente un Route se renderize.
+
 Link: Toma el lugar del elemento <a>, evita que se recargue la página completamente y actualiza la URL.
