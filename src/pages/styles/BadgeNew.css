@@ -1,0 +1,20 @@
+.BadgeNew__hero img{
+ 
+    height: 160px;
+    /* margin-left: 2rem; */
+}
+
+.BadgeNew__hero  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.BadgeNew__hero {
+    width: 100%;
+    padding: 1rem 0;
+    background: url(../../images/backgroundCyber.png) #0B0706;
+    background-repeat: repeat;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }

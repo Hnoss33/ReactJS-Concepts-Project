@@ -1,0 +1,21 @@
+.Bknd {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background: url(../../images/backgroundCyber.png) #0B0706;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Bknd__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .Bknd__col {
+      align-items: flex-start;
+    }
+  }
