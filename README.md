@@ -1,4 +1,4 @@
-# ReactJS-Concepts-Project
+# ReactJS-Concepts-Project-CYBERPUNK2077 Conf
  Project Focused on how to use ReactJS (ESPAÑOL)
 
 Create-react-app
@@ -16,7 +16,7 @@ Eslint: Lee el código y avisa de errores.
 
 
 
-#Clonar el código de GitHub
+# Clonar el código de GitHub
 
 En esta clase vamos a comenzar clonando el código del proyecto del repositorio en GitHub.
 Es importante que tú y yo tengamos un punto de partida en común. Así vamos a poder asegurarnos que cada cambio que yo haga en el código, tú también lo recibas.
@@ -39,7 +39,7 @@ Si todo salió bien, vas a ver una pantalla que dice “Hello, Platzi Badges”.
 En la próxima clase vas a aprender como fue que “Hello, Platzi Badges” llegó desde el código hasta la pantalla de tu navegador.
 *Aquí encuentras el repositorio.
 
-#Los pasos a seguir son:
+# Los pasos a seguir son:
 git clone https://github.com/.../.....git
 cd platzi-badges
 git checkout ba74f3a
@@ -57,7 +57,7 @@ ReactDOM a appendChild
 ReactDOM.render() toma dos argumentos: Qué queremos renderizar y dónde lo queremos renderizar. 
 Siempre que escribas JSX es requisito importar React.
 
-#JSX
+# JSX
 
 JSX es una extensión de JavaScript creada por Facebook para el uso con la biblioteca React. Sirve de preprocesador (como Sass o Stylus a CSS) y transforma el código generado con React a JavaScript.
 JSX tiene su alternativa que es React.createElement pero es preferible JSX porque es mucho más legible y expresivo. Ambos tienen el mismo poder y la misma capacidad.
@@ -71,7 +71,7 @@ En JSX se utilizan las llaves para introducir variables o expresiones de Javascr
 Las expresiones pueden ser llamadas a otras funciones, cálculos matemáticos, etc. Si las expresiones son false, 0, null, undefined, entre otros, no se verán.
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#¿Qué es un componente?
+# ¿Qué es un componente?
 Los componentes en React son bloques de construcción.
 Las aplicaciones hechas con React son como figuras de Lego. 
 Junta varias piezas (componentes) y puedes construir un website tan pequeño o tan grande como quieras.
@@ -87,7 +87,7 @@ Identificar componentes es una habilidad esencial para poder desarrollar aplicac
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#Cómo aplicar estilos
+# Cómo aplicar estilos
 Para los estilos crearemos una carpeta llamada Styles y allí vivirán todos los archivos de estilos que tienen que ver con los componentes.
 Para usar los estilos es necesario importarlos con import
 React funciona ligeramente diferente y para los atributos de clases no se utiliza class sino className
@@ -96,31 +96,31 @@ Existen estilos que son usados de manera global o en varios componentes, así qu
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#Props
+# Props
 Los props que es la forma corta de properties son argumentos de una función y en este caso serán los atributos de nuestro componente como class, src, etc.
 
 Estos props salen de una variable de la clase que se llama this.props y los valores son asignados directamente en el ReactDOM.render().
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#Enlazando eventos
+# Enlazando eventos
 React dispone de eventos. Cada vez que se recibe información en un input se obtiene un evento onChange y se maneja con un método de la clase this.handleChange
 Los elementos button también tienen un evento que es onClick.
 Cuando hay un botón dentro de un formulario, este automáticamente será de tipo submit. Si no queremos que pase así hay dos maneras de evitarlo: especificando que su valor es de tipo button o manejándolo desde el formulario cuando ocurre el evento onSubmit.
 
 
-#Manejo de estado
+# Manejo de estado
 Hasta esta clase todos los componentes han obtenido su información a través de props que vienen desde afuera (otros componentes) pero hay otra manera en la que los componentes pueden producir su propia información y guardarla para ser consumida o pasada a otros componentes a través de sus props. La clave está en que la información del state a otros componentes pasará en una sola dirección y podrá ser consumida pero no modificada.
 Para guardar la información en el estado se usa una función de la clase component llamada setState a la cual se le debe pasar un objeto con la información que se quiere guardar.
 Aunque no se ve, la información está siendo guardada en dos sitios. Cada input guarda su propio valor y al tiempo la está guardando en setState, lo cual no es ideal. Para solucionarlo hay que modificar los inputs de un estado de no controlados a controlados.
 
 
-#Levantamiento del estado
+# Levantamiento del estado
 Levantar el estado es una técnica de React que pone el estado en una localización donde se le pueda pasar como props a los componentes. Lo ideal es poner el estado en el lugar más cercano a todos los componentes que quieren compartir esa información.
 Algo interesante que le da el nombre a React es su parte de “reactivo” ya que cada vez que hay un cambio en el estado o en los props que recibe un componente se vuelve a renderizar todo el componente y todos sus descendientes.
 
 
-#Introducción a React Router
+# Introducción a React Router
 Las aplicaciones que se trabajan en React son llamadas single page apps. Esto es posible gracias a React Router que es una librería Open Source.
 
 Multi Page Apps: Cada página implica una petición al servidor. La respuesta usualmente tiene todo el contenido de la página.
@@ -139,7 +139,7 @@ Switch: Dentro de Switch solamente van elementos de Route. Switch se asegura que
 Link: Toma el lugar del elemento <a>, evita que se recargue la página completamente y actualiza la URL.
  
  
-#División de la aplicación en rutas:
+# División de la aplicación en rutas:
 
 Para instalar React Router lo hacemos desde la terminal con npm install react-router-dom. Como es importante usar exactamente la misma versión, del package.json en “dependencies” se quita lo que está delante del 4.
 Link internamente tiene un elemento <a> pero va a interceptar el clic para navegar de manera interna sin refrescar toda la página.
@@ -156,19 +156,19 @@ Otra forma de hacer que todas tus URL’s que no existan sean redirigidas a tu c
        <Redirect from="*" to="/404" />
 Como podemos observar llamamos a nuestro componente 404 y luego utilizamos Redirect, el cual es un componente de React Router para hacer redirecciones; en este caso hacemos que todas las URL’s que no correspondan a alguna que hayamos declarado, sean redirigidas a MiComponente404.
 
-#Introducción llamadas a un API
+# Introducción llamadas a un API
 
 Las llamadas a una API siguen un patrón similar siempre que las hacemos, cada llamada consta de tres estados:
 Loading: cuando la petición se envía y estamos esperando.
 Error: se debe dejar un mensaje para el usuario para arreglar el error o volver a intentarlo.
 Data: los datos nos pueden llegar de dos formas, o en error o con los datos requeridos.
 
-#React.js: Cómo traer datos de un API en React
+# React.js: Cómo traer datos de un API en React
 
 Una llamada a una API es un proceso asíncrono, es decir que lo comenzamos pero no sabemos cuándo acabará. Por lo mismo la función a escribir debe ser asíncrona.
 La llamada se hará usando fetch que es una función de JavaScript que al pasarle una dirección de internet, hará una petición GET y lo que sea que exista ahí será devuelto.
 
-#Solicitando datos (GET)
+# Solicitando datos (GET)
 
 En esta clase, nuestra meta es usar datos reales que vengan de una API a nuestra aplicación, hasta ahora todos los datos que hemos utilizado han sido simulados los HardCodeamos en la aplicación y los presentamos, ya aquí conocemos los 3 estados de una petición a un API, usaremos esos mismos estados para realizar la petición y usar datos reales.
 
@@ -315,7 +315,7 @@ Lo que hara que al momento de recibir el state de error nos colocara nuestro men
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#Hooks
+# Hooks
 Hasta ahora todos los componentes que hemos desarrollado son de dos tipos o son clases o son funciones, cuando son funciones es porque ese componente no tiene un estado propio que manejar no tiene ciclos de vida a los que se tiene que suscribir mientras que las clases si, cuando queremos hacer una petición a un api tal vez la comenzamos desde el componentDidMount también cambiamos estados de loading a true, lo apagamos cuando tenemos los datos los guardamos en el estado o si hubo un error también lo guardamos.
 
 React tiene un feature que se llama hooks y va a permitir que las funciones también tengan features que solo tienen las clases a través de estas funciones llamadas hooks;
@@ -392,11 +392,11 @@ Recuperamos Tambien el count y setCount del useState y siempre lo inicializaremo
     return[count, setCount];
 
     }
-Si el conteo es mayor que el máximo, vamos a regresar el valor a 0, pero vamos a terminar regresando siempre el arreglo de los valores de count y setCount y listo. Ya esta hecho nuestro contador.
+# Si el conteo es mayor que el máximo, vamos a regresar el valor a 0, pero vamos a terminar regresando siempre el arreglo de los valores de count y setCount y listo. Ya esta hecho nuestro contador.
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#Search Filter
+# Search Filter
 En esta clase usaremos ReactHooks, la lista en si en código esta dentro de BadgesList, el problema que tenemos para hacerlo allí es que los hooks solo sirven dentro e componentes funcionales asi que en esta caso tenemos una clase y debemos hacer ese cambio;
 functionBadgesList (props) {
   const badges = props.badges;
@@ -447,6 +447,7 @@ El primer paso sera darle un value a nuestro input al momento de escribir algo e
        const badges = props.badges;
 
        const [query, setQuery] = React.useState('')
+       
 El useState nos regresa dos valores los cuales serán el query y el setQuery “state y setState” usamos el React.useState y como valor inicial le damos el string vacio, este query es el que vamos a usar en el value y lo que sea que este en ese estado es lo que vamos a desplegar, asi que vamos a nuestra función que tenemos en onChange ;
 
     return (
