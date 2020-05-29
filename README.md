@@ -65,7 +65,7 @@ React.createElement recibe 3 argumentos:
 
 El tipo de elemento que estamos creando sus atributos o props y el children que es el contenido.
 
-Ejemplo:         React.createElement(‘a’, { href: ‘https://platzi.com’ }, ‘Ir a Platzi’);
+Ejemplo:         React.createElement(‘a’, { href: ‘https://web.com’ }, ‘Ir a web’);
 
 En JSX se utilizan las llaves para introducir variables o expresiones de Javascript. Lo que sea que esté adentro se va a evaluar y su resultado se mostrará en pantalla.
 Las expresiones pueden ser llamadas a otras funciones, cálculos matemáticos, etc. Si las expresiones son false, 0, null, undefined, entre otros, no se verán.
@@ -154,6 +154,7 @@ Otra forma de hacer que todas tus URL’s que no existan sean redirigidas a tu c
        import { Redirect, Route } from "react-router-dom";
        <Route path="/404" component={MiComponente404} />
        <Redirect from="*" to="/404" />
+       
 Como podemos observar llamamos a nuestro componente 404 y luego utilizamos Redirect, el cual es un componente de React Router para hacer redirecciones; en este caso hacemos que todas las URL’s que no correspondan a alguna que hayamos declarado, sean redirigidas a MiComponente404.
 
 # Introducción llamadas a un API
@@ -208,6 +209,7 @@ classBadgesextendsReact.Component{
     fetchData= () => {
         this.setState( { loading: true, error:null })
     }
+    
 Luego de esta crearemos nuestro metodo fetchData y la declararemos abajo en el cual declararemos igualmente nuestro setState pasandole los valores de 
 
              “{loading: true, error: null}” 
@@ -250,6 +252,7 @@ Y hacemos nuestra llamada;
             this.setState({ loading: false, error: error })
             
         }
+	
 Dejando asi data en vez de vacia, hacemos la llamada a badges donde queremos la lista de todos los badges, pasa que esta es una llamada asíncrona regresa una promesa, lo que podemos hacer aca es usar async await para esperar la contestación pero para poder declarar await, debemos declarar nuestra función como async de manera que;
 
         fetchData= async () => {
