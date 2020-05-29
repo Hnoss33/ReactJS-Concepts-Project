@@ -41,7 +41,7 @@ En la próxima clase vas a aprender como fue que “Hello, Platzi Badges” lleg
 
 # Los pasos a seguir son:
 git clone https://github.com/.../.....git
-cd platzi-badges
+cd nombre de carpeta  => projecto-badges
 git checkout ba74f3a
 Git Clone te dará una copia de todo el repositorio del projecto, pero en un commit muy adelante, casi terminado. Para ver el código como el que muestra el profesor es que debes hacer checkout a ése commit específico.
 (Opcional: Aquí se recomienda hacer una rama adicional para que puedas modificar el código sin afectar la rama del código terminado del profesor:
